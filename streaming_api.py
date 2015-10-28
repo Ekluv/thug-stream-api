@@ -1,8 +1,6 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-from tweepy import api
-import time
 
 access_token = "4010780236-Q2YCnYqSCgdmTMiT2G6Hj2YGxmH34pt3slVEueM"
 access_token_secret = "0DDNg2tS2XJK32bPggoJXzRX2W2xJVUxmFw1kdMLmA0J1"
