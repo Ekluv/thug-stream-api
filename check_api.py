@@ -7,8 +7,6 @@ local=datetime.now()
 
 tweets_data_path = 'data.txt'
 
-tweets_file = open(tweets_data_path, "r")
-
 class User(object):
     name=""
     urls=[]
@@ -19,7 +17,7 @@ class User(object):
 
 
 while(True):
-
+    tweets_file = open(tweets_data_path, "r")
     users=[]
     for line in tweets_file:
         try:
@@ -49,6 +47,7 @@ while(True):
         print "****************"
 
     print "------------------------------------------------------------"
+    tweets_file.close()
     time.sleep(60)
 
 
